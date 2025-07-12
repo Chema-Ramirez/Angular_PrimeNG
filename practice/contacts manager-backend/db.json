@@ -1,0 +1,14 @@
+{
+    "contacts": [{
+      "id": "1",
+      "name": "Laura Fernández",
+      "email": "laura.fernandez@example.com",
+      "phone": "+34 612 345 678"
+    },
+    {
+      "id": "2",
+      "name": "Carlos Gómez",
+      "email": "carlos.gomez@example.com",
+      "phone": "+34 611 666 666"
+    }]
+}
