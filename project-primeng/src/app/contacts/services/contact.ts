@@ -12,7 +12,7 @@ export interface Contact {
 @Injectable({
   providedIn: 'root',
 })
-export class Contact {
+export class ContactService {
   private API = 'http://localhost:3000/contacts';
 
   constructor(private http: HttpClient) {}
