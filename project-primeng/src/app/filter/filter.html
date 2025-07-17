@@ -1,0 +1,11 @@
+<div class="card">
+    <div class="content-wrapper">
+        <img alt="user header" class="user-image" src="https://primefaces.org/cdn/primevue/images/card-vue.jpg"
+            [style]="filterStyle" />
+
+        <p-selectbutton [(ngModel)]="filter" [options]="filterOptions" optionLabel="label" optionValue="value"
+            class="filter-button"></p-selectbutton>
+
+        <p-slider [(ngModel)]="filterValues[filter]" class="filter-slider" [min]="0" [max]="200"></p-slider>
+    </div>
+</div>

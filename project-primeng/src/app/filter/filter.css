@@ -1,0 +1,37 @@
+/* Centra todo el contenido en la pantalla */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Organiza los elementos en columna y centrados */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Imagen con tamaño adaptable */
+.user-image {
+  width: 10rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .user-image {
+    width: 20rem;
+  }
+}
+
+/* Botón de filtro */
+.filter-button {
+  margin-bottom: 1rem;
+}
+
+/* Slider con ancho controlado */
+.filter-slider {
+  width: 14rem;
+}
