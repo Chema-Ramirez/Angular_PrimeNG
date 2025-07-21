@@ -98,7 +98,7 @@ export class Dashboard implements OnInit {
         ],
       },
       {
-        label: 'Resources',
+        label: 'Knob',
         root: true,
       },
       {

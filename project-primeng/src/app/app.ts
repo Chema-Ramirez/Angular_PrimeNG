@@ -9,6 +9,7 @@ import { Dashboard } from './dashboard/dashboard';
 import { Filter } from './filter/filter';
 import { Chart } from './chart/chart';
 import { Messages } from './messages/messages';
+import { Products } from './products/products';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +24,7 @@ import { Messages } from './messages/messages';
     Filter,
     Chart,
     Messages,
+    Products,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
