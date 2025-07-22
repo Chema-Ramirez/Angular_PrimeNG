@@ -10,10 +10,12 @@ import { Filter } from './filter/filter';
 import { Chart } from './chart/chart';
 import { Messages } from './messages/messages';
 import { Products } from './products/products';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   imports: [
+    CommonModule,
     RouterOutlet,
     ReactiveFormsModule,
     InputTextModule,
@@ -31,5 +33,13 @@ import { Products } from './products/products';
   standalone: true,
 })
 export class App {
-  protected readonly title = signal('project-primeng');
+  protected readonly activeView = signal<
+    'dashboard' | 'messages' | 'chart' | 'products' | 'filter'
+  >('dashboard');
+
+  setActiveView(
+    view: 'dashboard' | 'messages' | 'chart' | 'products' | 'filter'
+  ) {
+    this.activeView.set(view);
+  }
 }

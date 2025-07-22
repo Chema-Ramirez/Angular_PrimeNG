@@ -1,6 +1,21 @@
-<app-dashboard></app-dashboard>
-<app-messages></app-messages>
-<app-chart></app-chart>
-<app-products></app-products>
-<app-filter></app-filter>
+<app-dashboard (viewChange)="setActiveView($event)"></app-dashboard>
+
+
+<ng-container *ngIf="activeView() === 'dashboard'">
+    <app-messages></app-messages>
+    <app-products></app-products>
+    <app-chart></app-chart>
+    <app-filter></app-filter>
+</ng-container>
+
+
+<app-products *ngIf="activeView() === 'products'"></app-products>
+
+
+<app-messages *ngIf="activeView() === 'messages'"></app-messages>
+
+
+<app-filter *ngIf="activeView() === 'filter'"></app-filter>
+
+
 <router-outlet />
