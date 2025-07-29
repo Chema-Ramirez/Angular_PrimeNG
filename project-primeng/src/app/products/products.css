@@ -1,17 +1,17 @@
 .card {
-  padding: 3rem 2rem; /* más aire vertical */
+  padding: 3rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .p-carousel .p-carousel-item {
-  padding: 1.5rem; /* más espacio entre ítems del carrusel */
+  padding: 1.5rem;
 }
 
 .product-card {
   border: 1px solid #0f172a;
   border-radius: 16px;
-  padding: 2rem; /* más aire interno */
+  padding: 2rem;
   background-color: #18181b;
   box-shadow: 0 0 15px #818cf8;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -68,7 +68,6 @@
   color: #ffffff;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
   .card {
     padding: 2rem 1rem;

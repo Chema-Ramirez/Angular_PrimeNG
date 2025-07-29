@@ -27,7 +27,7 @@ export class Dashboard implements OnInit {
         command: () => this.viewChange.emit('dashboard'),
       },
       {
-        label: 'Knob',
+        label: 'Products',
         root: true,
         command: () => this.viewChange.emit('products'),
       },

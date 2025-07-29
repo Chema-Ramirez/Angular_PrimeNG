@@ -1,16 +1,14 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
-import { InputTextModule } from 'primeng/inputtext';
-import { PasswordModule } from 'primeng/password';
-import { ButtonModule } from 'primeng/button';
-import { CardModule } from 'primeng/card';
+
+import { CommonModule } from '@angular/common';
 import { Dashboard } from './dashboard/dashboard';
 import { Filter } from './filter/filter';
 import { Chart } from './chart/chart';
 import { Messages } from './messages/messages';
 import { Products } from './products/products';
-import { CommonModule } from '@angular/common';
+import { ControlledGalleria } from './media/controlled-galleria/controlled-galleria';
 
 @Component({
   selector: 'app-root',
@@ -18,15 +16,12 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     RouterOutlet,
     ReactiveFormsModule,
-    InputTextModule,
-    PasswordModule,
-    ButtonModule,
-    CardModule,
     Dashboard,
     Filter,
     Chart,
     Messages,
     Products,
+    ControlledGalleria,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
