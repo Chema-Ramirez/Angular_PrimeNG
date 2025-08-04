@@ -14,7 +14,17 @@ import { AvatarModule } from 'primeng/avatar';
 })
 export class Dashboard implements OnInit {
   @Output() viewChange = new EventEmitter<
-    'products' | 'dashboard' | 'messages'
+    | 'products'
+    | 'dashboard'
+    | 'messages'
+    | 'chart'
+    | 'filter'
+    | 'buttons'
+    | 'data'
+    | 'overlay'
+    | 'media'
+    | 'panel'
+    | 'form'
   >();
 
   items: MegaMenuItem[] = [];
@@ -32,9 +42,49 @@ export class Dashboard implements OnInit {
         command: () => this.viewChange.emit('products'),
       },
       {
-        label: 'Contact',
+        label: 'Buttons',
+        root: true,
+        command: () => this.viewChange.emit('buttons'),
+      },
+      {
+        label: 'Messages',
         root: true,
         command: () => this.viewChange.emit('messages'),
+      },
+      {
+        label: 'Chart',
+        root: true,
+        command: () => this.viewChange.emit('chart'),
+      },
+      {
+        label: 'Filter',
+        root: true,
+        command: () => this.viewChange.emit('filter'),
+      },
+      {
+        label: 'Data',
+        root: true,
+        command: () => this.viewChange.emit('data'),
+      },
+      {
+        label: 'Overlay',
+        root: true,
+        command: () => this.viewChange.emit('overlay'),
+      },
+      {
+        label: 'Media',
+        root: true,
+        command: () => this.viewChange.emit('media'),
+      },
+      {
+        label: 'Panel',
+        root: true,
+        command: () => this.viewChange.emit('panel'),
+      },
+      {
+        label: 'Form',
+        root: true,
+        command: () => this.viewChange.emit('form'),
       },
     ];
   }

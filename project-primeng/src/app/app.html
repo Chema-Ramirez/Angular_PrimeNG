@@ -1,6 +1,5 @@
 <app-dashboard (viewChange)="setActiveView($event)"></app-dashboard>
 
-
 <ng-container *ngIf="activeView() === 'dashboard'">
     <app-messages></app-messages>
     <app-products></app-products>
@@ -9,14 +8,75 @@
     <app-controlled-galleria></app-controlled-galleria>
 </ng-container>
 
+<ng-container *ngIf="activeView() === 'products'">
+    <app-products></app-products>
+    <app-basic-dataview></app-basic-dataview>
+    <app-colored-orgchart></app-colored-orgchart>
+    <app-layout-dataview></app-layout-dataview>
+    <app-template-picklist></app-template-picklist>
+    <app-template-timeline></app-template-timeline>
+</ng-container>
 
-<app-products *ngIf="activeView() === 'products'"></app-products>
+<ng-container *ngIf="activeView() === 'messages'">
+    <app-messages></app-messages>
+</ng-container>
+
+<ng-container *ngIf="activeView() === 'chart'">
+    <app-chart></app-chart>
+    <app-chartradar></app-chartradar>
+    <app-combochart></app-combochart>
+</ng-container>
+
+<ng-container *ngIf="activeView() === 'filter'">
+    <app-filter></app-filter>
+</ng-container>
 
 
-<app-messages *ngIf="activeView() === 'messages'"></app-messages>
+<ng-container *ngIf="activeView() === 'buttons'">
+    <h1>Severity</h1>
+    <app-messages></app-messages>
+
+    <h1>ICONLY BUTTON:</h1>
+    <app-icononly-button></app-icononly-button>
+
+    <h1>OutLine Button:</h1>
+    <app-outline-button></app-outline-button>
+
+    <h1>Quartercircle Button:</h1>
+    <app-quartercircle-speeddial></app-quartercircle-speeddial>
+</ng-container>
 
 
-<app-filter *ngIf="activeView() === 'filter'"></app-filter>
+<ng-container *ngIf="activeView() === 'data'">
+    <app-basic-dataview></app-basic-dataview>
+    <app-loading-dataview></app-loading-dataview>
+</ng-container>
+
+<ng-container *ngIf="activeView() === 'overlay'">
+    <app-basic-popover></app-basic-popover>
+</ng-container>
+
+<ng-container *ngIf="activeView() === 'media'">
+    <app-controlled-galleria></app-controlled-galleria>
+    <app-customcontent-galleria></app-customcontent-galleria>
+    <app-responsive-imagecompare></app-responsive-imagecompare>
+    <app-template-galleria></app-template-galleria>
+</ng-container>
+
+<ng-container *ngIf="activeView() === 'panel'">
+    <app-advanced-card></app-advanced-card>
+    <app-login-divider></app-login-divider>
+    <app-template-accordion></app-template-accordion>
+</ng-container>
+
+<ng-container *ngIf="activeView() === 'form'">
+    <app-invalid-floatlabel></app-invalid-floatlabel>
+    <app-numberstars-rating></app-numberstars-rating>
+    <app-reactive-knob></app-reactive-knob>
+    <app-template-rating></app-template-rating>
+    <app-templatedriven-editor></app-templatedriven-editor>
+    <app-templatedriven-knob></app-templatedriven-knob>
+</ng-container>
 
 
-<router-outlet />
+<router-outlet></router-outlet>

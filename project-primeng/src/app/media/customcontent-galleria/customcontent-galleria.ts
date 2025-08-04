@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { GalleriaModule } from 'primeng/galleria';
 import { CommonModule } from '@angular/common';
-import { PhotoService } from '../service/photoservice';
-import { Photo } from '../domain/photo';
+import { PhotoService } from './service/photoservice';
+import { Photo } from './domain/photodomain';
 
 @Component({
   selector: 'app-customcontent-galleria',
