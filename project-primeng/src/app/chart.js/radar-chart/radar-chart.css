@@ -1,0 +1,24 @@
+.radar-chart-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  background-color: var(--p-card-bg, #fff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radar-chart {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .radar-chart-container {
+    max-width: 90%;
+    padding: 0.75rem;
+  }
+}

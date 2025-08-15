@@ -1,1 +1,9 @@
 @import "primeicons/primeicons.css";
+
+.separator {
+  margin: 5rem auto;
+  width: 90%;
+  height: 1px;
+  background-color: white;
+  opacity: 0.2;
+}

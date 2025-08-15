@@ -1,21 +1,16 @@
-<div class="card">
+<div class="card dark-card">
     <p-picklist [source]="sourceProducts" [target]="targetProducts" [dragdrop]="true" [responsive]="true"
         sourceFilterPlaceholder="Search by name" targetFilterPlaceholder="Search by name" breakpoint="1400px"
-        scrollHeight="20rem">
+        scrollHeight="20rem" class="custom-picklist">
         <ng-template let-option let-selected="selected" #item>
-            <div class="flex flex-wrap p-1 items-center gap-4 w-full">
-                <img class="w-12 shrink-0 rounded"
-                    src="https://primefaces.org/cdn/primeng/images/demo/product/{{ option.image }}"
+            <div class="picklist-item" [ngClass]="{ 'selected': selected }">
+                <img class="item-image" src="https://primefaces.org/cdn/primeng/images/demo/product/{{ option.image }}"
                     [alt]="option.name" />
-                <div class="flex-1 flex flex-col">
-                    <span class="font-medium text-sm">{{ option.name }}</span>
-                    <span [ngClass]="{
-                            'text-surface-500': !selected,
-                            'dark:text-surface-400': !selected,
-                            'text-inherit': selected,
-                        }">{{ option.category }}</span>
+                <div class="item-details">
+                    <span class="item-name">{{ option.name }}</span>
+                    <span class="item-category">{{ option.category }}</span>
                 </div>
-                <span class="font-bold sm:ml-8">{{ '$' + option.price }}</span>
+                <span class="item-price">{{ '$' + option.price }}</span>
             </div>
         </ng-template>
     </p-picklist>

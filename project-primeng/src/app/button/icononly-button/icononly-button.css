@@ -1,0 +1,51 @@
+.icononly-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background-color: #121212;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgb(0 0 0 / 0.6);
+  color: #e0e0e0;
+}
+
+.button-group {
+  background-color: #1f1f1f;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid #333;
+}
+
+.button-group h4 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: #90caf9;
+  text-align: center;
+  user-select: none;
+}
+
+.buttons-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+p-button {
+  width: 3.5rem;
+  height: 3.5rem;
+  min-width: unset !important;
+  border-radius: 0.5rem !important;
+  font-size: 1.25rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+p-button >>> button {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+}

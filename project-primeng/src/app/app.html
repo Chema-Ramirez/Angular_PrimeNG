@@ -8,6 +8,7 @@
     <app-controlled-galleria></app-controlled-galleria>
 </ng-container>
 
+
 <ng-container *ngIf="activeView() === 'products'">
     <app-products></app-products>
     <app-basic-dataview></app-basic-dataview>
@@ -17,15 +18,25 @@
     <app-template-timeline></app-template-timeline>
 </ng-container>
 
+
 <ng-container *ngIf="activeView() === 'messages'">
     <app-messages></app-messages>
 </ng-container>
 
+
 <ng-container *ngIf="activeView() === 'chart'">
+    <h1>Basic Graphics</h1>
     <app-chart></app-chart>
+    <div class="separator"></div>
+
+    <h1>Radar Graphics</h1>
     <app-chartradar></app-chartradar>
+    <div class="separator"></div>
+
+    <h1>Combo Graphics</h1>
     <app-combochart></app-combochart>
 </ng-container>
+
 
 <ng-container *ngIf="activeView() === 'filter'">
     <app-filter></app-filter>
@@ -48,8 +59,20 @@
 
 
 <ng-container *ngIf="activeView() === 'data'">
-    <app-basic-dataview></app-basic-dataview>
+    <h1>Radar Graphics</h1>
+    <app-colored-orgchart></app-colored-orgchart>
+    <div class="separator"></div>
+
+    <h1>Radar Graphics</h1>
     <app-loading-dataview></app-loading-dataview>
+    <div class="separator"></div>
+
+    <h1>Radar Graphics</h1>
+    <app-template-picklist></app-template-picklist>
+    <div class="separator"></div>
+
+    <h1>Radar Graphics</h1>
+    <app-template-timeline></app-template-timeline>
 </ng-container>
 
 <ng-container *ngIf="activeView() === 'overlay'">

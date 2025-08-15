@@ -1,12 +1,10 @@
-<div class="card overflow-x-auto">
+<div class="orgchart-container">
     <p-organization-chart [value]="data" [collapsible]="true">
         <ng-template let-node pTemplate="person">
-            <div class="flex flex-col">
-                <div class="flex flex-col items-center">
-                    <img [src]="node.data.image" class="mb-4 w-12 h-12" />
-                    <span class="font-bold mb-2">{{ node.data.name }}</span>
-                    <span>{{ node.data.title }}</span>
-                </div>
+            <div class="person-node">
+                <img [src]="node.data.image" class="person-image" />
+                <span class="person-name">{{ node.data.name }}</span>
+                <span class="person-title">{{ node.data.title }}</span>
             </div>
         </ng-template>
     </p-organization-chart>

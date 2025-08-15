@@ -16,6 +16,7 @@ import { ChartModule } from 'primeng/chart';
   templateUrl: './combo-chart.html',
   standalone: true,
   imports: [ChartModule],
+  styleUrls: ['./combo-chart.css'],
 })
 export class ComboChart implements OnInit {
   data: any;
@@ -67,7 +68,7 @@ export class ComboChart implements OnInit {
           {
             type: 'line',
             label: 'Dataset 1',
-            borderColor: documentStyle.getPropertyValue('--p-orange-500'),
+            borderColor: documentStyle.getPropertyValue('--p-slate-900'),
             borderWidth: 2,
             fill: false,
             tension: 0.4,
@@ -76,7 +77,7 @@ export class ComboChart implements OnInit {
           {
             type: 'bar',
             label: 'Dataset 2',
-            backgroundColor: documentStyle.getPropertyValue('--p-gray-500'),
+            backgroundColor: documentStyle.getPropertyValue('--p-sky-500'),
             data: [21, 84, 24, 75, 37, 65, 34],
             borderColor: 'white',
             borderWidth: 2,
@@ -84,7 +85,7 @@ export class ComboChart implements OnInit {
           {
             type: 'bar',
             label: 'Dataset 3',
-            backgroundColor: documentStyle.getPropertyValue('--p-cyan-500'),
+            backgroundColor: documentStyle.getPropertyValue('--p-pink-500'),
             data: [41, 52, 24, 74, 23, 21, 32],
           },
         ],
@@ -96,14 +97,14 @@ export class ComboChart implements OnInit {
         plugins: {
           legend: {
             labels: {
-              color: textColor,
+              color: '#000000',
             },
           },
         },
         scales: {
           x: {
             ticks: {
-              color: textColorSecondary,
+              color: '#000000',
             },
             grid: {
               color: surfaceBorder,

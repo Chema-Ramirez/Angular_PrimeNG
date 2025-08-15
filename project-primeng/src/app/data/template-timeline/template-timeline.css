@@ -1,0 +1,67 @@
+.dark-card {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #f3f4f6;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.customized-timeline ::ng-deep .p-timeline-event-connector {
+  background-color: #374151;
+}
+
+.timeline-marker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  font-size: 1.1rem;
+}
+
+.timeline-card {
+  background-color: #2c2c2c;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid #444;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-date {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.timeline-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #d1d5db;
+  margin-bottom: 1rem;
+}
+
+.timeline-button ::ng-deep .p-button-label {
+  color: #60a5fa !important;
+}

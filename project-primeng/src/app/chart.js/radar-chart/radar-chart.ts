@@ -16,6 +16,7 @@ import { ChartModule } from 'primeng/chart';
   templateUrl: './radar-chart.html',
   standalone: true,
   imports: [ChartModule],
+  styleUrls: ['./radar-chart.css'],
 })
 export class ChartRadar implements OnInit {
   data: any;
@@ -63,24 +64,23 @@ export class ChartRadar implements OnInit {
         datasets: [
           {
             label: 'My First dataset',
-            borderColor: documentStyle.getPropertyValue('--p-gray-400'),
-            pointBackgroundColor:
-              documentStyle.getPropertyValue('--p-gray-400'),
-            pointBorderColor: documentStyle.getPropertyValue('--p-gray-400'),
+            borderColor: documentStyle.getPropertyValue('--p-red-700'),
+            pointBackgroundColor: documentStyle.getPropertyValue('--p-red-700'),
+            pointBorderColor: documentStyle.getPropertyValue('--p-red-700'),
             pointHoverBackgroundColor: textColor,
             pointHoverBorderColor:
-              documentStyle.getPropertyValue('--p-gray-400'),
+              documentStyle.getPropertyValue('--p-red-700'),
             data: [65, 59, 90, 81, 56, 55, 40],
           },
           {
             label: 'My Second dataset',
-            borderColor: documentStyle.getPropertyValue('--p-cyan-400'),
+            borderColor: documentStyle.getPropertyValue('--p-emerald-500'),
             pointBackgroundColor:
-              documentStyle.getPropertyValue('--p-cyan-400'),
-            pointBorderColor: documentStyle.getPropertyValue('--p-cyan-400'),
+              documentStyle.getPropertyValue('--p-emerald-500'),
+            pointBorderColor: documentStyle.getPropertyValue('--p-emerald-500'),
             pointHoverBackgroundColor: textColor,
             pointHoverBorderColor:
-              documentStyle.getPropertyValue('--p-cyan-400'),
+              documentStyle.getPropertyValue('--p-emerald-500'),
             data: [28, 48, 40, 19, 96, 27, 100],
           },
         ],
@@ -90,14 +90,14 @@ export class ChartRadar implements OnInit {
         plugins: {
           legend: {
             labels: {
-              color: textColor,
+              color: '#000000',
             },
           },
         },
         scales: {
           r: {
             grid: {
-              color: textColorSecondary,
+              color: '#000000',
             },
           },
         },

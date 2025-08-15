@@ -68,8 +68,8 @@ export class Chart implements OnInit {
         datasets: [
           {
             label: 'My First dataset',
-            backgroundColor: documentStyle.getPropertyValue('--p-cyan-500'),
-            borderColor: documentStyle.getPropertyValue('--p-cyan-500'),
+            backgroundColor: documentStyle.getPropertyValue('--p-indigo-900'),
+            borderColor: documentStyle.getPropertyValue('--p-indigo-900'),
             data: [65, 59, 80, 81, 56, 55, 40],
           },
           {
@@ -87,14 +87,14 @@ export class Chart implements OnInit {
         plugins: {
           legend: {
             labels: {
-              color: textColor,
+              color: '#000000',
             },
           },
         },
         scales: {
           x: {
             ticks: {
-              color: textColorSecondary,
+              color: '#000000',
               font: {
                 weight: 500,
               },

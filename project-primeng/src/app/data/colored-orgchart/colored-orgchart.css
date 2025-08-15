@@ -1,0 +1,46 @@
+.orgchart-container {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 50%;
+  overflow-x: auto;
+  background-color: var(--p-card-bg, #121212);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 12px rgb(245, 245, 245);
+}
+
+.person-node {
+  background-color: #f0f4ff;
+  color: #20aa98;
+  padding: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  min-width: 140px;
+  max-width: 200px;
+}
+
+.person-image {
+  width: 85px;
+  height: 85px;
+  border-radius: 9999px;
+  margin-bottom: 0.5rem;
+}
+
+.person-name {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.person-title {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.p-organizationchart-node-content:not(.person-node) {
+  background-color: #e5e7eb;
+  color: #111827;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
